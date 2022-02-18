@@ -1,0 +1,304 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>В</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylemobile.css">
+    <link rel="stylesheet" href="stylesSmall.css">
+</head>
+<body>
+<div class = "page">
+    <div class = "popUpWindow" id = "popUpWindow">
+        <a class = "menuItem" href = "#about">О нас</a>
+        <a class = "menuItem" href = "#assets">Наши активы</a>
+        <a class = "menuItem" href = "#contacts">Контакты</a>
+        <p class = "iks" onclick= "menuClose()">x</p>
+    </div>
+    <div class="menu">
+        <div class = "menuMargin">
+        </div>
+        <div class = "menu_Left">
+            <p class = "telephone">
+                +79857627776
+            </p>
+            <p class = "request">
+                ОСТАВИТЬ ЗАЯВКУ
+            </p>
+        </div>
+        <div class = "placeHold"></div>
+        <div class = "menu_right">
+            <p class = "menu_text">
+                МЕНЮ
+            </p>
+            <img style="height: 20px" src="images/burger.png">
+
+        </div>
+        <div class = "menuMargin">
+        </div>
+    </div>
+
+    <div class = "opening">
+        <div class = "opening_dimmer">
+        </div>
+        <div class = "opening_wrap">
+            <img  class = "opening_logo"  src="images/ayonalogo.png">
+            <p class = "opening_text" id = "first">
+                Вдохновленные бизнесом,</br>
+                созданы для его улучшения
+            </p>
+            <div class = "opening_strip">
+                <p class = "info_text" id = "info">
+                    инвестиции | коммерческая недвижимость | Москва сити
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="spacer">
+
+    </div>
+    <div class = "screen" id = "screenOne">
+        <div class = "block" id = "assets">
+            <div class="assfirstwrap">
+            <div class = "asset first" id = "assFirst">
+                <div class = "assets_wrap_1">
+                    <p class = "asset_head">
+                        Наши офисы
+                    </p>
+                    <p class = "asset_text">
+                        в БЦ Москва-сити
+                    </p>
+                </div>
+
+            </div>
+            <ul class = "asset_names" id = "asset_names">
+                <div class = 'mobilespacer'></div>
+                <li class = "asset_name" id = "cap">
+                    Город столиц
+                </li>
+                <div class = asset_names_spacer >
+                </div>
+                <li class = "asset_name" id = "fed">
+                    Башня Федерации
+                </li>
+            </ul>
+            </div>
+            <div class = "assets_wrap" id = "assWrap">
+                <div class = "asset second" id = "CC" onclick="getCapOffice()">
+                    <img class ="asset_image" id = "image" src = "images/capitalCity.jpg">
+                    <p class = "asset_text1">
+                        Город Столиц
+                    </p>
+                    <p class = "asset_text2">
+                     Южный блок | 12 и 13
+
+                    </p>
+                </div>
+                <div class = "asset" id = "FT" onclick="getTopOffice()">
+                    <img class ="asset_image" src = "images/federation.png">
+                    <p class = "asset_text1">
+                        Башня федерации
+                    </p>
+                    <p class = "asset_text2">
+                        Восток | 92 этаж
+                        | 450м2
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = "screen blue">
+
+        <div class = "block blue" id = "about">
+            <img class = "companyInfo_image" src = "images/whole.png">
+            <div class = "companyInfo_text">
+                <p class = "companyInfo_text_head">
+                    Ayona Estate - пионер на рынке
+                    премиальной недвижимости
+                </p>
+                <p class = "companyInfo_text_main">
+                    Компания создана в 2008 году, и масштаб нашей деятельности растет ежегодно</br>
+                    Наши клиенты - крупные международные и российские фирмы и государственные предприятия
+                    Наше преимущество - высоквалифицированный сервис и персональное отношение к нашим клиентам
+                </p>
+            </div>
+        </div>
+        <div class = "companyInfo_button"><p class = "button_text">Напишите нам</p></div>
+    </div>
+    <div class = "screen">
+            <div class = "offices">
+                <div class = "offices_rectangle">
+                </div>
+                <div id = "testTwo" class = "offices_head">
+                    Наши пространства относятся к классу А+
+                </div>
+                <div class = "offices_text">
+                    Cовременные деловые офисы олицетворяют собой дух смотрящего в будущее города с помощью практичного дизайна, который
+                    позволяет оптимально использовать пространство и получать как можно больше дневного света, и гибких планировок,
+                    которые  адаптируются к меняющейся динамике рынка, в сочетаниии с непревзойденными видами на пейзажи мегаполиса и Москва-реку.
+                </div>
+                <div class = "offices_pics">
+                    <div class = "offices_pic one">
+                        <p class = "offices_pic_text">
+                            Захватывающие виды
+                        </p>
+                        <div class = "office_dimmer">
+                        </div>
+                        <div class = "office_bg"></div>
+                    </div>
+                    <div class = "offices_pic three">
+                        <p class = "offices_pic_text">
+                            Уникальные решения
+                        </p>
+                        <div class = "office_dimmer">
+
+                        </div>
+                        <div class = "office_bg"></div>
+                    </div>
+                    <div class = "offices_pic two">
+                        <p class = "offices_pic_text">
+                            Премиальные материалы
+                        </p>
+                        <div class = "office_dimmer">
+                        </div>
+                        <div class = "office_bg"></div>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+    <div class = "screen gray">
+        <div class = "contacts" id = "contacts">
+            <div class = "contacts_adress">
+                <p class = "contacts_head">
+                    Контакты
+                </p>
+                <p class = "contacts_adress_text">
+                    Москва 123119</br>
+                    Пресненская набережная 8С1,</br>
+                    МФК “Город Столиц”</br>
+                    БЦ “Южный блок”</br>
+                    13 этаж
+                </p>
+                <p class = "contacts_adress_text bold"> +7(495)-988-98-08</p>
+                <p class = "contacts_adress_text bold"> +7(985)-431-62-52 </p>
+                <p class = "contacts_adress_text bold"> ayona@ayona.com</p>
+
+            </div>
+            <div class = "contacts_form">
+                <p class = "contacts_head two">
+                    Форма обратной связи
+                </p>
+                <label for="fname">Имя</label>
+                <input type="text" id="fname" name="firstname" placeholder="Напишите ваше имя здесь...">
+
+                <label for="lname">Эл. почта</label>
+                <input type="text" id="lname" name="lastname" placeholder="Напишите вашу эл.почту здесь...">
+                <label for="subject">Сообщение</label>
+                <textarea id="subject" name="" placeholder="Напишите вашу сообщение здесь..." style="height:100px"></textarea>
+                <div class = "contacts_form_button">
+                    <p class = "contacts_form_button_text">Отправить</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class = "footer">
+        <img class = "ayona_Logo" src= "images/ayonalogo.png">
+        <div class = "footer_line">
+        </div>
+        <div class = "footer_horLine"></div>
+        <div class = "footer_contacts">
+            <p class = "footer_contacts_contact phone">+7(495)-988-98-08</p>
+            <p class = "footer_contacts_contact copyright">Copyright 2008 (c)</p>
+            <p class = "footer_contacts_contact mail">info@ayona.com</p>
+        </div>
+    </div>
+</div>
+<script type = "text/javascript">
+
+    let assNames = document.getElementById('asset_names');
+    let img = document.getElementById("image");
+    let menuBlock = document.getElementById("popUpWindow");
+    let assFirst = document.getElementById('assFirst');
+    let assWrap = document.getElementById('assWrap');
+    let assWrapL = document.getElementById('assWrap');
+    let cap = document.getElementById('cap');
+    let fed = document.getElementById('fed');
+    let loadedImgs = 1;
+
+
+    const assets = document.getElementById('assets');
+    const newDiv = document.createElement('div');
+
+
+    function getCapOffice() {
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET','http://localhost:3400/offices');
+        assWrap.innerHTML = '<p style="align-self: center; margin-left: auto; margin-right: auto;" class = "blinking">Загрузка</p>';
+
+        xhr.onload = function () {
+            newDiv.setAttribute('class','assets_wrap_loaded');
+            newDiv.setAttribute('id','assWrapL');
+            newDiv.innerHTML = xhr.response;
+            assNames.style.display = 'block';
+            fed.style.opacity = '0.5';
+            cap.style.opacity = '1';
+
+        }
+        xhr.send();
+    }
+
+
+    function getTopOffice() {
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET','http://localhost:3400/flagship');
+        assWrap.innerHTML = '<p style="align-self: center; margin-left: auto; margin-right: auto;" class = "blinking">Загрузка</p>';
+
+        xhr.onload = function () {
+            newDiv.setAttribute('class','assets_wrap_loaded');
+            newDiv.innerHTML = xhr.response;
+            assNames.style.display = 'block';
+            fed.style.opacity = '1';
+            cap.style.opacity = '0.5';
+
+        }
+        xhr.send();
+
+    }
+
+    function checkLoad() {
+        if(loadedImgs === 2){
+            assWrap.remove();
+            assets.appendChild(newDiv);
+            loadedImgs = 0;
+        }
+        else {loadedImgs++};
+    }
+
+    function checkLoadTwo() {
+        if(loadedImgs === 1){
+            assWrap.remove();
+            assets.appendChild(newDiv);
+            loadedImgs = 0;
+        }
+        else {loadedImgs++};
+    }
+
+    function showAssNames() {
+        assNames.style.display = "block";
+    }
+
+    cap.addEventListener('click', getCapOffice);
+    fed.addEventListener('click', getTopOffice);
+
+
+
+
+
+</script>
+
+</body>
+</html>

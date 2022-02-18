@@ -1,0 +1,266 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ayona-Estate Офис 12А</title>
+
+    <link rel="stylesheet" href="styleOfficeNewSmall.css">
+    <link rel="stylesheet" href="styleOfficeNew.css">
+    <link rel="stylesheet" href="styleOfficeNewMobile.css">
+
+</head>
+<body>
+<script type="text/javascript">
+
+</script>
+<div class = "page" id = "page">
+
+    <div class="menu">
+        <div class = "menuMargin">
+        </div>
+        <div class = "menu_Left">
+            <p class = "telephone">
+                +79857627776
+            </p>
+            <p class = "request">
+                ОСТАВИТЬ ЗАЯВКУ
+            </p>
+        </div>
+        <div class = "placeHold"></div>
+        <div class = "menu_right">
+            <p class = "menu_text">
+                МЕНЮ
+            </p>
+            <img style="height: 20px" src="images/burger.png">
+        </div>
+        <div class = "menuMargin">
+        </div>
+    </div>
+    <div class = "title_wrap">
+        <a class = "backlink_link" style="text-decoration: none" href = "/">
+            <div class="backLink">
+                <img class = "arrow" src = "images/strela.png">
+                <p class = "backLink_text">
+                    НАЗАД К ГЛАВНОЙ
+                </p>
+            </div>
+        </a>
+        <p class ="title">Офис 12A</p>
+        <div class = "title_wrap_spacer">
+
+        </div>
+    </div>
+    <div class = "infoImage">
+        <div class = "infoImage_info">
+            <p class="infoImage_info_title">ИНФОРМАЦИЯ</p>
+            <div class = "listWrap">
+                <div class="listWrap_char">
+                    <div class="listWrap_char_one">
+                        <div class="listWrap_char_char">
+                            Этаж
+                        </div>
+                    </div>
+                    <div class="listWrap_char_two">
+                        <div class="listWrap_char_char two">
+                            12
+                        </div>
+                    </div>
+                </div>
+                <div class="listWrap_char">
+                    <div class="listWrap_char_one">
+                        <div class="listWrap_char_char">
+                            Площадь
+                        </div>
+                    </div>
+                    <div class="listWrap_char_two">
+                        <div class="listWrap_char_char two">
+                           450м<sup>2</sup>
+                        </div>
+                    </div>
+                </div>
+                <div class="listWrap_char">
+                    <div class="listWrap_char_one">
+                        <div class="listWrap_char_char">
+                            Кабинетов
+                        </div>
+                    </div>
+                    <div class="listWrap_char_two">
+                        <div class="listWrap_char_char two">
+                            6
+                        </div>
+                    </div>
+                </div>
+                <div class="listWrap_char">
+                    <div class="listWrap_char_one">
+                        <div class="listWrap_char_char">
+                            Переговорных
+                        </div>
+                    </div>
+                    <div class="listWrap_char_two">
+                        <div class="listWrap_char_char two">
+                            1
+                        </div>
+                    </div>
+                </div>
+                <div class="listWrap_char">
+                    <div class="listWrap_char_one">
+                        <div class="listWrap_char_char">
+                        </div>
+                    </div>
+                    <div class="listWrap_char_two">
+                        <div class="listWrap_char_char">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a  class = "infoButton_link" style="text-decoration: none" href = "/">
+                <div class = "infoButton">
+                    <p class = "infoButton_text">Записаться на просмотр</p>
+                </div>
+            </a>
+            <div class = "extraInfo">
+                <img class="extraInfo_img" src="images/river.png">
+                <img class="extraInfo_img" src="images/flur.png">
+                <img class="extraInfo_img" src="images/compas.png">
+            </div>
+        </div>
+        <div class = "infoimage_wrap" id = "planWrap">
+            <div class = 'planLoader' id = "ringOne">
+                <div class="lds-dual-ring"></div>
+                <p>Загрузка плана</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="gallery_title">
+        <p class = "gallery_title_text">
+            ФОТОГАЛЕРЕЯ
+        </p>
+    </div>
+    <div class = "gallery_imageholder" id = "gallery">
+        <div class = 'planLoader' id = "ringTwo">
+            <div class="lds-dual-ring"></div>
+            <p>Загрузка изображений</p>
+        </div>
+        <div class="switchHolder" id = "switches">
+            <img class = "switchButton" id="bL" src="images/switchL.png">
+            <img class = "switchButton" id="bR" src="images/switchR.png">
+        </div>
+    </div>
+    <div class = "footer">
+        <img class = "ayona_Logo" src= "images/ayonalogo.png">
+        <div class = "footer_line">
+        </div>
+        <div class = "footer_horLine"></div>
+        <div class = "footer_contacts">
+            <p class = "footer_contacts_contact phone">+7(495)-988-98-08</p>
+            <p class = "footer_contacts_contact copyright">Copyright 2008 (c)</p>
+            <p class = "footer_contacts_contact mail">info@ayona.com</p>
+        </div>
+    </div>
+</div>
+<script type = "text/javascript">
+
+    let imgCounter = 0;
+    let currentIndex = 0;
+
+    const planWrap = document.getElementById('planWrap');
+    const ringOne = document.getElementById('ringOne');
+    const ringTwo = document.getElementById('ringTwo');
+    const gallery = document.getElementById('gallery');
+    const switchHolder = document.getElementById('switches');
+
+    const switchL = document.getElementById('bL');
+    const switchR = document.getElementById('bR');
+
+    const preloadDiv = document.createElement('div');
+
+    const startPlanLoad = () => {
+        let plan = new Image();
+        plan.addEventListener('load', () => {
+
+            ringOne.remove();
+            planWrap.appendChild(plan);
+            startImageLoad();
+        });
+        plan.classList.add('infoimage_plan');
+        plan.id = "planCapA";
+        plan.src = 'images/planCapA.png'
+    }
+
+    const startImageLoad = () => {
+
+        preloadDiv.innerHTML = '<img class="gallery_image" onload="checkLoadedImg()" src="images/CapA1.jpg" alt="none">\n' +
+            '        <img class="gallery_image" onload="checkLoadedImg()" src="images/CapA2.jpg" alt="none">\n' +
+            '        <img class="gallery_image" onload="checkLoadedImg()" src="images/CapA3.jpg" alt="none">\n' +
+            '        <img class="gallery_image" onload="checkLoadedImg()" src="images/CapA4.jpg" alt="none">'
+        preloadDiv.id = "preload";
+        document.getElementById('page').appendChild(preloadDiv);
+
+    }
+
+    const checkLoadedImg = () => {
+
+        imgCounter ++;
+        if (imgCounter == preloadDiv.children.length){
+            ringTwo.remove();
+            switchHolder.style.display = 'flex';
+            const currentImg = preloadDiv.firstChild;
+            const clone = currentImg.cloneNode(true);
+            gallery.appendChild(clone);
+            currentIndex = 0;
+        }
+    }
+
+
+    const switchAction = (e) => {
+        if(e.target === switchL) {
+            if (currentIndex === 0) {
+                currentIndex = 3;
+                let currentImage = gallery.children[1];
+                const node = preloadDiv.children[currentIndex];
+                const clone = node.cloneNode(true);
+                gallery.removeChild(currentImage);
+                gallery.append(clone);
+            }
+            else {
+                currentIndex--;
+                let currentImage = gallery.children[1];
+                const node = preloadDiv.children[currentIndex];
+                const clone = node.cloneNode(true);
+                gallery.removeChild(currentImage);
+                gallery.append(clone);
+            }
+        }
+        if(e.target === switchR) {
+            if (currentIndex === 3) {
+                currentIndex = 0;
+                let currentImage = gallery.children[1];
+                const node = preloadDiv.children[currentIndex];
+                const clone = node.cloneNode(true);
+                gallery.removeChild(currentImage);
+                gallery.append(clone);
+            }
+            else {
+                currentIndex++;
+                let currentImage = gallery.children[1];
+                const node = preloadDiv.children[currentIndex];
+                const clone = node.cloneNode(true);
+                gallery.removeChild(currentImage);
+                gallery.append(clone);
+            }
+        }
+    }
+
+    window.addEventListener("load",()=>{
+    startPlanLoad()});
+    switchL.addEventListener('click', switchAction);
+    switchR.addEventListener('click', switchAction);
+
+
+
+
+
+</script>
+</body>
+</html>
